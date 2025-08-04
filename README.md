@@ -1,6 +1,34 @@
 # 3X-UI Multi-Instance Manager
 
-A script for installing multiple 3X-UI instances on a single server with complete isolation.
+### A script for installing multiple 3X-UI instances on a single server with complete isolation.
+
+```
+╔════════════════════════════════════════╗
+║            X-UI Management             ║
+║             Control Panel              ║
+╚════════════════════════════════════════╝
+
+┌─ Available Operations ─────────────────┐
+│                                        │
+│  [1] Install New Instance              │
+│      → Create and configure X-UI       │
+│                                        │
+│  [2] Check System Status               │
+│      → View all running instances      │
+│                                        │
+│  [3] Uninstall Instance                │
+│      → Remove X-UI installation        │
+│                                        │
+│  [4] Uninstall All Panels              │
+│      → Remove all X-UI installations   │
+│                                        │
+│  [5] Exit Program                      │
+│      → Close management script         │
+│                                        │
+└────────────────────────────────────────┘
+
+Enter your choice [1-5]:
+```
 
 ## Key Features
 
@@ -61,7 +89,8 @@ chmod +x install-x-ui.sh
 ./install-x-ui.sh --uninstall x-ui2
 ```
 
-### Manual Removal (if needed)
+<details>
+<summary><strong>Manual Removal (if needed)</strong></summary>
 
 ```bash
 # Replace 'my-panel' with your instance name
@@ -73,6 +102,8 @@ sudo rm -f /etc/systemd/system/my-panel.service
 sudo rm -rf /etc/my-panel/  # This removes the database too
 sudo systemctl daemon-reload
 ```
+
+</details>
 
 
 ## 🔒 Security Tips
