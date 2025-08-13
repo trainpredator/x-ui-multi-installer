@@ -34,15 +34,15 @@ Enter your choice [1-5]:
 
 ✅ **Custom Instance Names** - Use any name you want (e.g., `my-panel`, `backup-ui`, `test-server`)
 
-✅ **Multiple Installation Sources** - Install from GitHub releases or local files
+✅ **Multiple Installation Sources** - Install from GitHub releases or local files or URL
 
 ✅ **Smart Detection** - Automatically finds existing instances
 
 ✅ **Complete Isolation** - Each instance has separate database and configuration
 
-✅ **Easy Management** - Interactive menu and command-line support
+✅ **Easy Management** - Interactive menu and command-line for each instance
 
-✅ **Safe Uninstallation** - Remove instances with database preservation options
+✅ **Security Action** - Randomize admin credentials and Configure unique ports for each instance
 
 ## Quick Installation
 
@@ -106,10 +106,5 @@ sudo systemctl daemon-reload
 </details>
 
 
-## 🔒 Security Tips
-
-- **If you encounter issues with xray, check for port conflicts**
-- Use different admin credentials for each instance
-- Configure unique ports for each web panel
-- Set up firewall rules for all instances
-- Update each instance independently
+##
+**🔺 If you encounter issues with xray, check for port conflicts.**
